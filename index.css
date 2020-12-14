@@ -1,0 +1,47 @@
+/* all css for clock container */
+
+#clockContainer{
+    position: relative;
+    border: 2px solid red;
+    background-color: black;
+    height: 50vw;
+    width: 70vw;
+    background: url('clock.jpg' ) no-repeat; /*this inserts clock as background*/
+    background-size: 100%;
+    margin: auto;
+    
+}
+
+#hour , #minute , #second{
+
+    position: absolute;/*for the top left arrow in boarder*/
+    background: rgb(228, 125, 30);
+    border-radius: 10px;
+    transform-origin: bottom;
+
+}
+#hour{
+    width: 1%; /*this is for the arrow hand*/
+    height: 27%;
+    top: 25%; /*inspect yourself for hand in exact circle , it bascially moves from absolute position*/
+    left: 48.8%;
+    
+    
+}
+#minute{
+    width: 0.4%;
+    height: 35%;
+    top: 17%;
+    left: 49.3%;
+    opacity: 0.8;
+    
+}
+#second{
+    width: 0.3%;
+    height: 40%;
+    top: 11%;
+    left: 49.3%;
+    opacity: 0.8;
+    background-color: black;
+    
+}
